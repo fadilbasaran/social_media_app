@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_app/theme/pallet.dart';
+import 'package:social_media_app/theme/dark_theme.dart';
+
+import 'features/auth/screens/login_screen.dart';
 
 void main() {
+    WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -12,8 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Kavir',
-      theme: Pallete.darkModeAppTheme,
-      home: const SizedBox(),
+     theme: DarkTheme.instance.darkModeAppTheme,
+      home: const LoginScreen(),
     );
   }
 }
