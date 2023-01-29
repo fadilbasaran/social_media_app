@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240729793143",
+    "project_id": "kavir-app-project",
+    "storage_bucket": "kavir-app-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240729793143:android:3a6450ae76c2045ff59c72",
+        "android_client_info": {
+          "package_name": "com.example.social_media_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240729793143-p8413g5nkpoor99g9q55mhojp9445iit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxJ51yYl0icMHK-1ho_vPlPADe_uUIieE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240729793143-p8413g5nkpoor99g9q55mhojp9445iit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

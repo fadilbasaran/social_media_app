@@ -8,7 +8,7 @@ class Palette {
   }
 
   Palette._init();
- Color get blackColor => Colors.black; // primary color
+  Color get blackColor => Colors.black; // primary color
   Color greyColor = const Color.fromRGBO(26, 39, 45, 1); // secondary color
   Color drawerColor = const Color.fromRGBO(18, 18, 18, 1);
   Color whiteColor = Colors.white;
@@ -33,6 +33,7 @@ class Palette {
       primaryColor: Palette.instance.redColor,
       colorScheme: ColorScheme.light(background: Palette.instance.whiteColor));
 }
+
 class CustomAppColors {
   static CustomAppColors? _instance;
   static CustomAppColors get instance {
@@ -53,4 +54,11 @@ class CustomAppColors {
   final MaterialColor grey = Colors.grey;
   final Color black = Colors.black;
   final Color white = Colors.white;
+
+ // primary color
+  final Color greyColor = const Color.fromRGBO(26, 39, 45, 1); // secondary color
+  final Color drawerColor = const Color.fromRGBO(18, 18, 18, 1);
+  final Color whiteColor = Colors.white;
+  final Color redColor = Colors.red.shade500;
+  final Color blueColor = Colors.blue.shade300;
 }
