@@ -18,20 +18,20 @@ class Palette {
   // Themes
 
   ThemeData lightModeAppTheme = ThemeData.light().copyWith(
-      scaffoldBackgroundColor: Palette.instance?.whiteColor,
-      cardColor: Palette.instance?.greyColor,
+      scaffoldBackgroundColor: Palette.instance.whiteColor,
+      cardColor: Palette.instance.greyColor,
       appBarTheme: AppBarTheme(
-        backgroundColor: Palette.instance?.whiteColor,
+        backgroundColor: Palette.instance.whiteColor,
         elevation: 0,
         iconTheme: IconThemeData(
-          color: Palette.instance?.blackColor,
+          color: Palette.instance.blackColor,
         ),
       ),
       drawerTheme: DrawerThemeData(
-        backgroundColor: Palette.instance?.whiteColor,
+        backgroundColor: Palette.instance.whiteColor,
       ),
-      primaryColor: Palette.instance?.redColor,
-      colorScheme: ColorScheme.light(background: Palette.instance!.whiteColor));
+      primaryColor: Palette.instance.redColor,
+      colorScheme: ColorScheme.light(background: Palette.instance.whiteColor));
 }
 class CustomAppColors {
   static CustomAppColors? _instance;

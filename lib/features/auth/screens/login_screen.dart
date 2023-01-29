@@ -9,9 +9,12 @@ class LoginScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Image.asset(
-          AppConstants.instance!.logoPath,
+          AppConstants.instance.logoPath,
           height: 40,
         ),
+        actions: [
+          TextButton(onPressed: () {}, child: const Text('Skip')),
+        ],
       ),
     );
   }
