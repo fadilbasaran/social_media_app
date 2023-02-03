@@ -6,10 +6,10 @@ import 'package:social_media_app/theme/dark_theme.dart';
 import 'features/auth/screens/login_screen.dart';
 
 Future<void> main() async {
-    WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp(
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
-);
+  );
   runApp(const MyApp());
 }
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Kavir',
-     theme: DarkTheme.instance.darkModeAppTheme,
+      theme: DarkTheme.instance.darkModeAppTheme,
       home: const LoginScreen(),
     );
   }
