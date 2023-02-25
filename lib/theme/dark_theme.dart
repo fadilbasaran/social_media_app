@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_app/theme/custom_color.dart';
+import 'custom_color.dart';
 
 class DarkTheme {
   static DarkTheme? _instance;

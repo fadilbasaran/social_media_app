@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_app/core/constants/constants.dart';
-import 'package:social_media_app/features/auth/common/sign_in_button.dart';
+import '../../../core/constants/constants.dart';
+import '../common/sign_in_button.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

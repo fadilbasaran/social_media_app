@@ -3,11 +3,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:social_media_app/core/constants/failure.dart';
-import 'package:social_media_app/core/providers/firebase_providers.dart';
+import '../../../core/constants/failure.dart';
+import '../../../core/providers/firebase_providers.dart';
 import '../../../core/constants/constants.dart';
 import '../../../core/constants/firebase_constants.dart';
-import 'package:social_media_app/models/user_model.dart';
+import '../../../models/user_model.dart';
 
 import '../../../core/constants/type_defs.dart';
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:social_media_app/core/constants/constants.dart';
-import 'package:social_media_app/features/auth/controller/auth_controller.dart';
-import 'package:social_media_app/theme/custom_color.dart';
+import '../../../core/constants/constants.dart';
+import '../controller/auth_controller.dart';
+import '../../../theme/custom_color.dart';
 
 class SingInButton extends ConsumerWidget {
   const SingInButton({super.key});

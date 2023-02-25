@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:social_media_app/features/auth/repository/auth_repository.dart';
+import '../repository/auth_repository.dart';
 
 import '../../../core/constants/utils.dart';
 
