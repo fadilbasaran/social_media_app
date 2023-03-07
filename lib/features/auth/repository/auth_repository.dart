@@ -58,7 +58,7 @@ class AuthRepository {
         await _users.doc(userCredential.user!.uid).set(userModel.toMap());
       } else {
         userModel = await getUserData(userCredential.user!.uid).first;
-        print(userModel);
+        print(userModel.name);
       }
       return right(userModel);
     } on FirebaseException catch (e) {
