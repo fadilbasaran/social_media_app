@@ -43,17 +43,18 @@ class AuthRepository {
 
       UserCredential userCredential =
           await _firebaseAuth.signInWithCredential(credential);
-      late UserModel userModel;
+       UserModel userModel;
       if (userCredential.additionalUserInfo!.isNewUser) {
         userModel = UserModel(
-            name: userCredential.user!.displayName ?? 'No Name',
-            profilPic: userCredential.user!.photoURL ??
-                AppConstants.instance.avatarDefault,
-            banner: AppConstants.instance.bannerDefault,
-            uid: userCredential.user!.uid,
-            isAuthenticated: true,
-            karma: 0,
-            awards: []);
+          name: userCredential.user!.displayName ?? 'No Name',
+          profilePic: userCredential.user!.photoURL ??
+              AppConstants.instance.avatarDefault,
+          banner: AppConstants.instance.bannerDefault,
+          uid: userCredential.user!.uid,
+          isAuthenticated: true,
+          karma: 0,
+          awards: [],
+        );
 
         await _users.doc(userCredential.user!.uid).set(userModel.toMap());
       } else {
@@ -68,8 +69,7 @@ class AuthRepository {
     }
   }
 
-  Stream<UserModel> getUserData(String uid) {
-    return _users.doc(uid).snapshots().map(
-        (event) => UserModel.fromMap(event.data() as Map<String, dynamic>));
+    Stream<UserModel> getUserData(String uid) {
+    return _users.doc(uid).snapshots().map((event) => UserModel.fromMap(event.data() as Map<String, dynamic>));
   }
 }
